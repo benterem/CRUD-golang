@@ -1,0 +1,12 @@
+CREATE DATABASE [IF NOT EXIST] square8_db;
+
+\c square8_db;
+
+CREATE TABLE [IF NOT EXIST] containers(
+    id BIGSERIAL NOT NULL PRIMARY KEY,
+    container_id VARCHAT(9) NOT NULL 
+    type VARCHAR(5) NOT NULL,
+    status VARCHAR(50) NOT NULL,
+    size VARCHAR(50) NOT NULL,
+    delted BOOLEAN NOT NULL DEFAULT FALSE
+);
